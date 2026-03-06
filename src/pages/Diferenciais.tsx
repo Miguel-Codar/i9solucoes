@@ -57,19 +57,19 @@ export const Diferenciais: React.FC = () => {
 
   const testimonials = [
     {
-      quote: "A i9 transformou a maneira como vejo minha empresa. Antes a contabilidade era só um mal necessário, hoje é minha principal ferramenta de gestão.",
-      author: "CEO, Empresa de Tecnologia",
-      role: "Cliente há 3 anos"
+      quote: "A disponibilidade é algo que admiro quando busco os serviços contábeis da Inove. Um bom escritório de contabilidade não é aquele que você só lembra para resolver algum problema, mas sim aquele que você lembra por trazer as melhores soluções para sua empresa.",
+      author: "Empório Natu Nobre",
+      role: "Cliente Parceiro"
     },
     {
-      quote: "Agilidade impressionante. Sempre que preciso de uma certidão ou tirar uma dúvida complexa, sou atendido na hora. Recomendo de olhos fechados.",
-      author: "Diretora Financeira, Varejo",
-      role: "Cliente há 5 anos"
+      quote: "As meninas da Inove Soluções Contábeis são sempre antenadas ao empreendedorismo, com um tratamento sempre profissional e ao mesmo tempo com amizade que deixa a gente mais seguro e confiante no trabalho delas.",
+      author: "Cliente Parceiro",
+      role: "Empreendedora"
     },
     {
-      quote: "Graças ao planejamento tributário deles, conseguimos reduzir nossa carga de impostos em 15% de forma totalmente legal. Um parceiro estratégico essencial.",
-      author: "Sócio-Fundador, Indústria",
-      role: "Cliente há 2 anos"
+      quote: "A Loja Cabulosa tem muito orgulho em ter a Inove Soluções Contábeis como parceira há 6 anos. Tudo muito bem organizado e resolvido, sem falar no atendimento das Inovetes!!",
+      author: "Loja Cabulosa",
+      role: "Parceira há 6 anos"
     }
   ];
 
