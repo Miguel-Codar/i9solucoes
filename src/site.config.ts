@@ -8,8 +8,7 @@ export const siteConfig = {
   address: "Av. Paulista, 1000 - Bela Vista, São Paulo - SP",
   hours: "Segunda a Sexta, das 08h às 18h",
   social: {
-    instagram: "https://instagram.com/i9solucoes",
-    linkedin: "https://linkedin.com/company/i9solucoes",
+    instagram: "https://www.instagram.com/i9cont_/",
   },
   colors: {
     primary: "#B01F2E",

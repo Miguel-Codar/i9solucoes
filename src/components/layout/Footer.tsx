@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { siteConfig } from '../../site.config';
-import { Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Mail, MapPin, Phone } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -19,9 +19,6 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-4 mt-4">
               <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <Instagram size={20} />
-              </a>
-              <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
