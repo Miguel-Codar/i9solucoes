@@ -349,27 +349,7 @@ export const Simulador: React.FC = () => {
               </div>
             </div>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="bg-primary rounded-[2.5rem] p-10 text-center text-white mb-12 shadow-xl shadow-primary/20 relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-64 h-64 bg-black/10 rounded-full blur-3xl" />
-              
-              <div className="relative z-10">
-                <p className="text-sm font-medium text-white/80 uppercase tracking-widest mb-6">Estimativa Mensal</p>
-                <div className="flex items-center justify-center gap-3">
-                  <span className="text-4xl md:text-5xl font-display font-bold">R$ {estimate.min}</span>
-                  <span className="text-xl text-white/60 font-sans">a</span>
-                  <span className="text-4xl md:text-5xl font-display font-bold">R$ {estimate.max}</span>
-                </div>
-                <p className="text-sm text-white/60 mt-6">* Valores estimados. Sujeito a análise detalhada do cenário.</p>
-              </div>
-            </motion.div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
               <Button onClick={() => setShowModal(true)} size="lg" className="sm:w-auto shadow-lg hover:-translate-y-1 transition-transform">
                 Receber proposta personalizada
               </Button>

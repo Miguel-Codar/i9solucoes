@@ -198,7 +198,7 @@ export const Home: React.FC = () => {
               >
                 <div className="absolute inset-0 bg-secondary/20 rounded-[2.5rem] rotate-3 transform scale-105 -z-10" />
                 <img 
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Abertura de empresa" 
                   className="rounded-[2.5rem] shadow-xl object-cover h-[400px] w-full"
                 />

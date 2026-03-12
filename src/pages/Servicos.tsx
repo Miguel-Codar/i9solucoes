@@ -30,7 +30,7 @@ export const Servicos: React.FC = () => {
       desc: "Cuidamos de toda a burocracia para você abrir sua empresa com segurança, escolhendo o melhor regime tributário desde o primeiro dia.",
       features: ["Análise de viabilidade", "Definição de CNAEs", "Planejamento societário"],
       color: "bg-primary/10 text-primary",
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: PieChart,

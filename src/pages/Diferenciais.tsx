@@ -57,19 +57,19 @@ export const Diferenciais: React.FC = () => {
 
   const testimonials = [
     {
-      quote: "A disponibilidade é algo que admiro quando busco os serviços contábeis da Inove. Um bom escritório de contabilidade não é aquele que você só lembra para resolver algum problema, mas sim aquele que você lembra por trazer as melhores soluções para sua empresa.",
-      author: "Empório Natu Nobre",
-      role: "Cliente Parceiro"
+      quote: "Boa tarde, sinceramente depois da Inove fiquei muito mais tranquila em relação a receita federal, arrumou o que precisa. Hoje não me preocupo mais como antes, porque sei da responsabilidade e cuidado deles com o cliente. 🙏",
+      author: "Ana Carla Falconery",
+      role: "Cliente há 6 anos"
     },
     {
-      quote: "As meninas da Inove Soluções Contábeis são sempre antenadas ao empreendedorismo, com um tratamento sempre profissional e ao mesmo tempo com amizade que deixa a gente mais seguro e confiante no trabalho delas.",
-      author: "Cliente Parceiro",
-      role: "Empreendedora"
+      quote: "Profissional capacitado, sempre orientando e conduzindo seus clientes de forma eficiente, buscando sempre o melhor.",
+      author: "Sandro Almeida",
+      role: "Local Guide"
     },
     {
-      quote: "A Loja Cabulosa tem muito orgulho em ter a Inove Soluções Contábeis como parceira há 6 anos. Tudo muito bem organizado e resolvido, sem falar no atendimento das Inovetes!!",
-      author: "Loja Cabulosa",
-      role: "Parceira há 6 anos"
+      quote: "Ótima estrutura e atendimento e um excelente profissional.",
+      author: "Erico Barreto Lins",
+      role: "Local Guide"
     }
   ];
 
