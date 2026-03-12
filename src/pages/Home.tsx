@@ -366,10 +366,7 @@ export const Home: React.FC = () => {
                     <div className="h-4 bg-gray-100 rounded-full w-5/6" />
                   </div>
                   
-                  <div className="bg-light rounded-2xl p-6 text-center border border-gray-100">
-                    <p className="text-xs text-gray-500 mb-2 uppercase tracking-widest font-bold">Estimativa Mensal</p>
-                    <p className="text-3xl font-display font-bold text-primary">R$ 799 <span className="text-lg text-gray-400 font-sans font-medium mx-1">a</span> R$ 999</p>
-                  </div>
+
                 </div>
               </motion.div>
             </div>
