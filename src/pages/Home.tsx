@@ -32,6 +32,20 @@ export const Home: React.FC = () => {
     navigate('/obrigado');
   };
 
+  const historyStats = [
+    { value: '+12', label: 'Anos de mercado' },
+    { value: '+140', label: 'Clientes ativos' },
+    { value: '95%', label: 'NPS' },
+    { value: '+R$900k', label: 'Impostos economizados nos últimos 3 anos' },
+  ];
+
+  const regimes = [
+    { icon: Users, title: 'MEI', subtitle: 'Microempreendedor individual' },
+    { icon: Building2, title: 'Simples', subtitle: 'Nacional' },
+    { icon: PieChart, title: 'Lucro', subtitle: 'Presumido' },
+    { icon: TrendingUp, title: 'Lucro', subtitle: 'Real' },
+  ];
+
   return (
     <div className="flex flex-col overflow-hidden">
       {/* Hero Section */}
@@ -136,6 +150,42 @@ export const Home: React.FC = () => {
                 </motion.div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 lg:py-32 bg-dark text-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+          <div className="absolute -top-[25%] -right-[15%] w-[55%] h-[120%] bg-primary/25 rounded-full blur-[120px] transform rotate-12" />
+          <div className="absolute -bottom-[25%] -left-[15%] w-[55%] h-[120%] bg-white/5 rounded-full blur-[120px] transform -rotate-12" />
+        </div>
+
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+            <div className="max-w-xl">
+              <h2 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
+                Nossa <span className="text-primary">História</span>
+              </h2>
+              <div className="mt-6 h-px w-24 bg-white/25" />
+              <p className="text-gray-300 text-lg leading-relaxed mt-6">
+                A i9 Soluções Contábeis nasceu para descomplicar a rotina fiscal e trazer clareza para decisões financeiras. Com atendimento consultivo e processos bem definidos, ajudamos empresas a crescerem com segurança.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 items-start">
+              {historyStats.map((stat) => (
+                <div key={stat.label} className="flex flex-col items-center text-center">
+                  <div className="rounded-full p-2 bg-[conic-gradient(var(--color-primary)_0_82%,rgba(255,255,255,0.12)_82%_100%)]">
+                    <div className="w-28 h-28 rounded-full bg-dark flex items-center justify-center border border-white/10">
+                      <span className="text-2xl md:text-3xl font-display font-bold">{stat.value}</span>
+                    </div>
+                  </div>
+                  <p className="mt-5 text-sm md:text-base text-white/90 font-semibold leading-tight max-w-[12rem]">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -250,6 +300,40 @@ export const Home: React.FC = () => {
                   Saber mais <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 lg:py-32 bg-dark text-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+          <div className="absolute top-1/2 left-1/2 w-[900px] h-[900px] -translate-x-1/2 -translate-y-1/2 bg-primary/15 rounded-full blur-[140px]" />
+        </div>
+
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col gap-10">
+            <div className="max-w-3xl">
+              <h2 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
+                Nossas <span className="text-primary">Atuações</span>
+              </h2>
+              <p className="text-lg text-gray-300 mt-5">
+                Nossa estrutura nos permite atender todos os regimes tributários:
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {regimes.map((regime) => (
+                <div key={`${regime.title}-${regime.subtitle}`} className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+                  <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6">
+                    <regime.icon size={28} />
+                  </div>
+                  <p className="font-display font-bold text-xl leading-tight">
+                    {regime.title}
+                    <br />
+                    <span className="text-white/90">{regime.subtitle}</span>
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

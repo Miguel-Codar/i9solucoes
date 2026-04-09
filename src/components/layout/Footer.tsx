@@ -33,6 +33,40 @@ export const Footer: React.FC = () => {
               <li><Link to="/diferenciais" className="hover:text-primary transition-colors">Diferenciais</Link></li>
               <li><Link to="/contato" className="hover:text-primary transition-colors">Contato</Link></li>
             </ul>
+
+            <h4 className="font-display font-semibold text-lg text-white mb-2 mt-6">Links úteis</h4>
+            <ul className="flex flex-col gap-3 text-gray-400 text-sm">
+              <li>
+                <a
+                  href="https://www.nfe.fazenda.gov.br/portal/principal.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Portal da NF-e
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.gov.br/esocial/pt-br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  eSocial
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://servicos.receitafederal.gov.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Serviços RFB
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Contact */}

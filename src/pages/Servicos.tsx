@@ -4,7 +4,7 @@ import { Button } from '../components/ui/Button';
 import { siteConfig } from '../site.config';
 import { 
   Building2, Calculator, PieChart, Users, 
-  Wallet, FileCheck, Lightbulb, ArrowRight,
+  Wallet, FileCheck, Lightbulb, ArrowRight, ArrowRightLeft,
   CheckCircle2
 } from 'lucide-react';
 
@@ -46,32 +46,32 @@ export const Servicos: React.FC = () => {
     {
       icon: Calculator,
       title: "Contabilidade Mensal",
-      desc: "Fechamento contábil preciso, balancetes e demonstrações financeiras que refletem a real situação do seu negócio.",
-      colSpan: "md:col-span-2 lg:col-span-1"
+      desc: "Fechamento contábil preciso, balancetes e demonstrações financeiras que refletem a real situação do seu negócio."
     },
     {
       icon: Users,
       title: "Folha de Pagamento (RH)",
-      desc: "Processamento completo da folha, admissões, rescisões, férias e gestão de benefícios, garantindo conformidade trabalhista.",
-      colSpan: "md:col-span-1"
-    },
-    {
-      icon: Wallet,
-      title: "BPO Financeiro",
-      desc: "Terceirização do seu financeiro: contas a pagar, a receber, conciliação bancária e emissão de notas fiscais. Foco total no seu core business.",
-      colSpan: "md:col-span-1 lg:col-span-2"
+      desc: "Processamento completo da folha, admissões, rescisões, férias e gestão de benefícios, garantindo conformidade trabalhista."
     },
     {
       icon: FileCheck,
       title: "Certidões e Obrigações",
-      desc: "Monitoramento constante da regularidade da sua empresa perante os órgãos públicos, garantindo a emissão de certidões negativas.",
-      colSpan: "md:col-span-1"
+      desc: "Monitoramento constante da regularidade da sua empresa perante os órgãos públicos, garantindo a emissão de certidões negativas."
+    },
+    {
+      icon: Wallet,
+      title: "BPO Financeiro",
+      desc: "Terceirização do seu financeiro: contas a pagar, a receber, conciliação bancária e emissão de notas fiscais. Foco total no seu core business."
+    },
+    {
+      icon: ArrowRightLeft,
+      title: "Recuperação de Crédito",
+      desc: "Identificação e recuperação de créditos tributários com análise técnica e acompanhamento completo, sempre dentro da legislação."
     },
     {
       icon: Lightbulb,
       title: "Consultoria Estratégica",
-      desc: "Análise de viabilidade, valuation, reestruturação societária e apoio na tomada de decisões complexas com base em dados.",
-      colSpan: "md:col-span-2"
+      desc: "Análise de viabilidade, valuation, reestruturação societária e apoio na tomada de decisões complexas com base em dados."
     }
   ];
 
@@ -129,7 +129,7 @@ export const Servicos: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button to="/simulador" variant={index % 2 === 0 ? "default" : "outline"} className="group shadow-lg hover:-translate-y-1 transition-all">
+                  <Button to="/simulador" variant={index % 2 === 0 ? "primary" : "outline"} className="group shadow-lg hover:-translate-y-1 transition-all">
                     Simular este serviço <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </motion.div>
@@ -183,7 +183,7 @@ export const Servicos: React.FC = () => {
               <motion.div 
                 key={i} 
                 variants={fadeInUp}
-                className={`bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col h-full group ${service.colSpan}`}
+                className="bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col h-full group"
               >
                 <div className="w-14 h-14 rounded-2xl bg-light flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <service.icon size={28} />

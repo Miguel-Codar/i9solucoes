@@ -8,6 +8,7 @@ export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const logoSizeClass = isScrolled ? 'h-11 md:h-12' : 'h-12 md:h-14';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +38,7 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 z-50">
-          <img src="/logo.png" alt="i9 Soluções Contábeis" className="h-10 w-auto object-contain" />
+          <img src="/logo.png" alt="i9 Soluções Contábeis" className={`${logoSizeClass} w-auto object-contain`} />
         </Link>
 
         {/* Desktop Nav */}
