@@ -79,11 +79,11 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span>{siteConfig.phone}</span>
+                <a href={siteConfig.whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-gray-600 underline-offset-4">{siteConfig.phone}</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />
-                <span>{siteConfig.email}</span>
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-primary transition-colors underline decoration-gray-600 underline-offset-4">{siteConfig.email}</a>
               </li>
             </ul>
           </div>

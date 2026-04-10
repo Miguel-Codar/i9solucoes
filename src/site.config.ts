@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "i9 Soluções Contábeis",
-  slogan: "Sua empresa precisa de clareza financeira para crescer com segurança",
-  whatsappNumber: "5511999999999", // Replace with real number
-  whatsappLink: "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista.",
+  slogan: "O nosso maior patrimônio é o seu Sucesso.",
+  whatsappNumber: "557534816906", // Replace with real number
+  whatsappLink: "https://wa.me/557534816906?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista.",
   email: "contato@i9solucoes.com.br",
-  phone: "(11) 99999-9999",
+  phone: "75 34816906",
   address: "Av. Paulista, 1000 - Bela Vista, São Paulo - SP",
   hours: "Segunda a Sexta, das 08h às 18h",
   social: {
